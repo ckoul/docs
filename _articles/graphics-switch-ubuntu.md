@@ -7,6 +7,8 @@ keywords:
   - System76
   - Ubuntu
   - 18.04
+  - 19.10
+  - 20.04
   - NVIDIA
   - Integrated
 image: http://support.system76.com/images/ubuntu.png
@@ -41,6 +43,13 @@ Gazelle, may also have external ports connected to the integrated GPU.)
 Hybrid graphics mode uses both the integrated GPU and the discrete NVIDIA GPU.
 Applications will use the integrated GPU unless explicitly requested to use the
 discrete GPU.
+
+Hybrid graphics mode is available on 19.10 and later.
+
+#### Compute
+
+Compute graphics mode uses the integrated GPU for all rendering. The NVIDIA
+GPU is left available, allowing it to be used as a compute node.
 
 ### Switch graphics
 
@@ -106,6 +115,12 @@ For switching to hybrid graphics:
 
 ```
 sudo system76-power graphics hybrid
+```
+
+For switching to compute mode:
+
+```
+sudo system76-power graphics compute
 ```
 
 ### Sources
